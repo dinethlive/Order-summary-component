@@ -1,4 +1,4 @@
-<h1>NFT preview card component by FrontEnd Mentor</h1>
+<h1>Order summary component by FrontEnd Mentor</h1>
 <hr />
 <h2>
   <a
