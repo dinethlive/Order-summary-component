@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+main {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(108, 126, 171, 0.3) 0px 2px 50px;
+}
+main > img {
+  width: 500px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+main > h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 2.3rem;
+  color: hsl(223, 47%, 23%);
+}
+
+main > p {
+  margin: 5rem;
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+
+main > h3,
+main > p,
+.payment__button,
+.cancel__order {
+  text-align: center;
+}
+.plan__wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1rem;
+  margin: 0 3rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+}
+
+.plan__wrapper__info {
+  margin-left: 1rem;
+}
+.plan__wrapper__plan__type {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.plan__wrapper__plan__price {
+  color: hsl(224, 23%, 55%);
+}
+.plan__wrapper__change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  margin-left: 9rem;
+}
+.plan__wrapper__change:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.payment__button {
+  padding: 1rem;
+  background-color: hsl(245, 75%, 52%);
+  margin: 0 3rem;
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1rem;
+  box-shadow: 0 7px 20px -2px rgb(181, 180, 180);
+  transition: 0.3s ease-in-out;
+}
+.payment__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.cancel__order {
+  color: hsl(224, 23%, 55%);
+  padding: 1rem;
+  font-weight: 900;
+  /* margin-bottom: 2rem;
+  margin-top: 1.2rem; */
+  margin: 1.2rem 3rem 2rem 3rem;
+}
+.cancel__order:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  main {
+    width: 350px;
+  }
+  main > img {
+    width: 350px;
+  }
+  main > h3 {
+    font-size: 1.5rem;
+  }
+  main > p {
+    line-height: 1.5rem;
+    margin: 1rem 3rem;
+  }
+  .plan__wrapper__change {
+    margin-left: calc(28%);
+  }
+  .plan__wrapper__info,
+  .plan__wrapper__change {
+    font-size: 0.8rem;
+  }
+  .payment__button,
+  .plan__wrapper {
+    margin-right: 1.6rem;
+    margin-left: 1.6rem;
+  }
+}
